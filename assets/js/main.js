@@ -4,7 +4,7 @@
 (() => {
   'use strict';
 
-  const CONTRACT = '';
+  const CONTRACT = '0xbc2068f308a97ac86cef0ce334d146e5f8449b91';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse = matchMedia('(pointer: coarse)').matches;
   const $  = (s, r = document) => r.querySelector(s);
@@ -1011,8 +1011,7 @@
   const cards = document.querySelectorAll('[data-verify]');
   if (!cards.length || typeof fetch !== 'function') return;
 
-  const CONTRACT = '';
-  if (!CONTRACT) return;
+  const CONTRACT = '0xbc2068f308a97ac86cef0ce334d146e5f8449b91';
   // Two independent providers: if the first is rate-limited or down, the claim
   // is still checkable rather than silently unverified.
   const RPCS = ['https://bsc-dataseed.binance.org', 'https://bsc-rpc.publicnode.com'];
